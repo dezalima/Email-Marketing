@@ -37,7 +37,6 @@ Com a tag `<head>` da mensagem e o `<body>` construído em tabelas, você pode c
 
 **Estilos:** Os estilos em E-mail Marketing são incluídos em linha. Isso significa que, ao invés de incluir os estilos em CSS na tag head, você deve incluir um atributo em cada elemento. O famoso CSS INLINE
 
-![Untitled](Email%20Marketing%20574ec000f024412ab0eaafeaeb76991f/Untitled.png)
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -826,15 +825,15 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
 ## Usar ltr ou não?
 
 <aside>
-📌 O `ltr` é principalmente usado quando vamos ter a necessidade de uma inversão de direção em algum bloco de código, entretanto é o modelo que eu prefiro usar por conta de funcionar muito bem no responsivo, também é um código que dificilmente vai apresentar quebras por questão de largura nos blocos. Um detalhe no `ltr` é que se precisar transformar o e-mail em algum modelo do Outlook (.oft .msg), ele vai ficar completamente invertido, então não é indicado nesse caso.
+📌 O ltr é principalmente usado quando vamos ter a necessidade de uma inversão de direção em algum bloco de código, entretanto é o modelo que eu prefiro usar por conta de funcionar muito bem no responsivo, também é um código que dificilmente vai apresentar quebras por questão de largura nos blocos. Um detalhe no ltr é que se precisar transformar o e-mail em algum modelo do Outlook (.oft .msg), ele vai ficar completamente invertido, então não é indicado nesse caso.
 
 </aside>
-
+<br>
 <aside>
-📌 O modelo que é só tabelas as vezes apresenta quebras em tamanho próximos ao breakpoint do mobile (510px, 504px) e acaba quebrando mesmo tendo espaço, isso porque ele parece ter a necessidade de ter alguns pixels de “sobra” entre os blocos, coisa que não é necessária no modelo `ltr` que se adapta melhor na telas.
+📌 O modelo que é só tabelas as vezes apresenta quebras em tamanho próximos ao breakpoint do mobile (510px, 504px) e acaba quebrando mesmo tendo espaço, isso porque ele parece ter a necessidade de ter alguns pixels de “sobra” entre os blocos, coisa que não é necessária no modelo ltr que se adapta melhor na telas.
 
 </aside>
-
+<br>
 <aside>
 📌 **No fim os dois modelos funcionam bem, cada um com a sua particularidade que deve ser levada em conta dependendo da complexidade do e-mail que vai ser feito. Dito isso, é só pegar os código e programar** ❤
 

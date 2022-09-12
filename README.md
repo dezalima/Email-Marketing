@@ -60,6 +60,90 @@ Com a tag `<head>` da mensagem e o `<body>` construído em tabelas, você pode c
 </body>
 </html>
 ```
+# ❔ Comentários condicionais do Outlook
+
+O Windows Outlook 2003 e superior usam o Microsoft Word como mecanismo de renderização, o que pode levar a alguns problemas de renderização estranhos. Os comentários condicionais do Outlook nos permitem adicionar bits de HTML que são lidos apenas pelas versões do Outlook baseadas no Word.
+
+****Sintaxe básica:**** Podemos usar tags **MSO** ( **Micros oft Office** ) para adicionar HTML/CSS em qualquer lugar em um modelo de email . Este código será ignorado por outros clientes de e-mail. 
+
+```html
+<!--[if mso]>
+    <table><tr><td>
+        /* Outlook-specific HTML content goes here. */
+    </td></tr></table>
+<![endif]-->
+```
+
+Obs: Somente o Outlook renderizará esta tabela.
+
+A principal maneira de usarmos tags MSO em nossos e-mails é criar “tabelas fantasmas” para que os e- [mails híbridos](https://stackoverflow.design/email/base/responsiveness#hybrid-design) não se desfaçam no Outlook. O design híbrido usa `inline-block`, `max-width`, `min-width`para empilhar colunas de tabela. O Outlook não oferece suporte a essas propriedades CSS, portanto, usamos tags MSO para criar “tabelas fantasmas” que aplicam uma largura fixa apenas para o Outlook. Sem a tabela fantasma acima, o Outlook exibiria a `<div>`largura de 100%.
+
+### ****Versões do Outlook****
+
+O uso de números de versão do Microsoft Office permite direcionar uma versão específica do Outlook.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/47e73ee5-2e74-40eb-b26d-1a95acbaa9ff/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca968417-6424-43d6-b8f3-f7363d1734e1/Untitled.png)
+
+### E o responsivo?
+
+Todos os modelos de e-mail usam uma abordagem híbrida para reconfigurar o layout para diferentes tamanhos de tela em todos os clientes de e-mail (independentemente do suporte a consulta de mídia). Depois que uma linha de base compatível com dispositivos móveis é definida, as media queries podem ser usadas para aprimorar progressivamente os e-mails nos clientes que os suportam.
+
+Depois que uma linha de base híbrida é definida, as consultas de mídia podem ser usadas para ajustar um layout de e-mail responsivo. Como as colunas (espero) já estão empilhadas, as consultas de mídia podem ser usadas para alterar a largura e o alinhamento do texto em pequenas janelas de visualização.
+
+O design híbrido usa colunas de empilhamento de tabelas `inline-block`, `max-width`, `min-width`e [ghost](https://stackoverflow.design/email/base/mso#ghost-tables) sem consultas de mídia enquanto impõe uma largura de área de trabalho fixa para o Outlook.
+
+```html
+<tr>
+    <td>
+        <!--[if mso]>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+        <td width="340">
+        <![endif]-->
+            <div style="display:inline-block; width:100%; min-width:200px; max-width:340px;">
+                Column 1
+            </div>
+        <!--[if mso]>
+        </td>
+        <td width="340">
+        <![endif]-->
+            <div style="display:inline-block; width:100%; min-width:200px; max-width:340px;">
+                Column 2
+            </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+    </td>
+</tr>
+```
+
+Neste exemplo, as duas colunas serão exibidas lado a lado em telas amplas de desktop e empilhadas uma sobre a outra em telas móveis estreitas.
+
+### ****Espaçamento responsivo****
+
+O preenchimento padrão da área de trabalho para modelos de email é **30px** . As classes de utilitário podem ser usadas para reduzir o espaçamento para **20px** ou **remover o preenchimento** em viewports menores. Útil para melhorar os layouts de e-mail no celular.
+
+| Classe | Resultado |
+| --- | --- |
+| .sm-p-nenhum | preenchimento: 0; |
+| .sm-pt-nenhum | topo de preenchimento: 0; |
+| .sm-pb-nenhum | fundo de preenchimento: 0; |
+| .sm-pr-nenhum | preenchimento direito: 0; |
+| .sm-pl-nenhum | padding-esquerda: 0; |
+| .sm-py-none | topo de preenchimento: 0; fundo de preenchimento: 0; |
+| .sm-px-nenhum | preenchimento direito: 0; padding-esquerda: 0; |
+| .sm-p | preenchimento: 20px; |
+| .sm-pt | preenchimento superior: 20px; |
+| .sm-pb | fundo de preenchimento: 20px; |
+| .sm-pr | padding-right: 20px; |
+| .sm-pl | padding-esquerdo: 20px; |
+| .sm-py | preenchimento superior: 20px; fundo de preenchimento: 20px; |
+| .sm-px | padding-right: 20px; padding-esquerdo: 20px; |
+| .sm-mb | margem inferior: 20px; |
 
 # 💌 Dicas e boas práticas para construção do e-mail
 
@@ -838,3 +922,19 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
 📌 **No fim os dois modelos funcionam bem, cada um com a sua particularidade que deve ser levada em conta dependendo da complexidade do e-mail que vai ser feito. Dito isso, é só pegar os código e programar** ❤
 
 </aside>
+# ⚙Links de apoio
+
+Vários links que eu uso para consulta vez ou outra, tem muita informação em fóruns também. 
+
+- [https://templateria.com.br/blog/templates/50-fatos-sobre-email-marketing-no-outlook/](https://templateria.com.br/blog/templates/50-fatos-sobre-email-marketing-no-outlook/)
+- [https://stackoverflow.design/email/base/mso/](https://stackoverflow.design/email/base/mso/)
+- [https://www.htmlemailcheck.com/knowledge-base/target-outlook-email-clients-using-conditional-comments/](https://www.htmlemailcheck.com/knowledge-base/target-outlook-email-clients-using-conditional-comments/)
+- [https://www.emailonacid.com/tip/outlook-desktop/](https://www.emailonacid.com/tip/outlook-desktop/)
+- [https://litmus.com/community/discussions/516-outlook-com-stripping-conditional-comments-try-this](https://litmus.com/community/discussions/516-outlook-com-stripping-conditional-comments-try-this)
+- [https://www.emailonacid.com/blog/article/email-development/emailology_vector_markup_language_and_backgrounds/](https://www.emailonacid.com/blog/article/email-development/emailology_vector_markup_language_and_backgrounds/)
+- [https://www.hteumeuleu.com/](https://www.hteumeuleu.com/)
+- [https://github.com/hteumeuleu](https://github.com/hteumeuleu)
+- [https://litmus.com/community/](https://litmus.com/community/)
+- [https://www.campaignmonitor.com/](https://www.campaignmonitor.com/)
+- [https://proofjump.com/dark-mode-simulator/](https://proofjump.com/dark-mode-simulator/)
+- [https://www.campaignmonitor.com/css/color-background/background-image/](https://www.campaignmonitor.com/css/color-background/background-image/)

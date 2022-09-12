@@ -82,9 +82,25 @@ A principal maneira de usarmos tags MSO em nossos e-mails é criar “tabelas fa
 
 O uso de números de versão do Microsoft Office permite direcionar uma versão específica do Outlook.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/47e73ee5-2e74-40eb-b26d-1a95acbaa9ff/Untitled.png)
+| Outlook version(s) | Code |
+| --- | --- |
+| All Windows OutlookMost common | <!--[if mso]> your code <![endif]--> |
+| Outlook 2000 | <!--[if mso 9]> your code <![endif]--> |
+| Outlook 2002 | <!--[if mso 10]> your code <![endif]--> |
+| Outlook 2003 | <!--[if mso 11]> your code <![endif]--> |
+| Outlook 2007 | <!--[if mso 12]> your code <![endif]--> |
+| Outlook 2010 | <!--[if mso 14]> your code <![endif]--> |
+| Outlook 2013 | <!--[if mso 15]> your code <![endif]--> |
+| Outlook 2016 | <!--[if mso 16]> your code <![endif]--> |
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca968417-6424-43d6-b8f3-f7363d1734e1/Untitled.png)
+| Code | Description |
+| --- | --- |
+| gt | greater than |
+| lt | less than |
+| gte | greater than or equal to |
+| lte | less than or equal to |
+| | | or |
+| ! | not |
 
 ### E o responsivo?
 

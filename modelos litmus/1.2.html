@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wistia</title>
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      background: white;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image-fix {
+      display: block;
+    }
+
+    .unsub-text {
+      mso-line-height-rule: exactly;
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #cbd0d6;
+    }
+
+    .unsub-text a {
+      text-decoration: none;
+      color: #cbd0d6;
+    }
+
+    .address-text {
+      mso-line-height-rule: exactly;
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #cbd0d6;
+    }
+
+    .address-text a {
+      text-decoration: none;
+      color: #cbd0d6;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      /*video blocks*/
+      table[class="content-table"] {
+        width: 320px !important;
+      }
+
+      table[class="mobile-frame"] {
+        width: 280px !important;
+      }
+
+      table[class="video-table"] {
+        width: 290px !important;
+      }
+
+      td[class="header-block-l"] {
+        padding-top: 10px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        display: block !important;
+        text-align: center !important;
+        width: 320px !important;
+      }
+
+      td[class="header-block-r"] {
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 20px !important;
+        padding-left: 0px !important;
+        display: block !important;
+        width: 320px !important;
+      }
+
+      td[class="hbr"] {
+        text-align: center !important;
+      }
+
+      td[class="top-video-image"] img {
+        width: 290px !important;
+      }
+
+      td[class="three-col-padding"] {
+        padding-top: 20px !important;
+        padding-right: 0px !important;
+        padding-bottom: 20px !important;
+        padding-left: 0px !important;
+      }
+
+      td[class="three-col-headline"] {
+        text-align: left !important;
+      }
+
+      td[class="three-col-description"] {
+        text-align: left !important;
+      }
+
+      td[class="three-col-cta"] {
+        text-align: left !important;
+      }
+
+      td[class="video-split-l"] {
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        display: block !important;
+      }
+
+      td[class="video-split-l"] img {
+        width: 275px !important;
+      }
+
+      td[class="video-split-m"] {
+        border-top: 1px solid #cbd0d6;
+        display: block !important;
+        padding-top: 20px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      td[class="video-split-m"] img {
+        width: 275px !important;
+      }
+
+      td[class="video-split-r"] {
+        display: block !important;
+        padding-top: 20px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        border-top: 1px solid #cbd0d6;
+      }
+
+      td[class="video-split-r"] img {
+        width: 275px !important;
+      }
+
+      table[class="two-col-width"] {
+        width: 320px !important;
+      }
+
+      td[class="two-col-split-l"] {
+        display: block !important;
+        padding-top: 20px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      td[class="two-col-split-r"] {
+        border-top: 1px solid #cbd0d6;
+        display: block !important;
+        padding-top: 20px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      td[class="footer-block-l"] {
+        display: block !important;
+        width: 320px !important;
+      }
+
+      td[class="footer-block-r"] {
+        padding-top: 30px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        display: block !important;
+        width: 320px !important;
+      }
+
+      td[class="company-name"] {
+        text-align: center !important;
+      }
+
+      td[class="address"] {
+        text-align: center !important;
+      }
+
+      td[class="edit"] {
+        text-align: center !important;
+      }
+
+      td[class="unsub"] {
+        text-align: center !important;
+      }
+
+      *[class="is-mobile"] {
+        display: block !important;
+        max-height: none !important;
+      }
+
+      *[class="is-desktop"] {
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: white; font-family: 'Arial', 'Helvetica', sans-serif; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; width: 100%;">
+  <div class="litmus-builder-preview-text" style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Add optional preview text here&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+
+  <table role="presentation" bgcolor="#ffffff" width="100%" cellspacing="0" cellpadding="0" border="0" class="table-body" style="line-height: 100%; margin: 0; padding: 0; width: 100%;">
+    <tr>
+      <td align="center" style="border-collapse: collapse;">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="content-table">
+          <tr>
+            <td height="10" class="page-break" bgcolor="#ffffff" style="border-collapse: collapse; line-height: 10px; mso-line-height-rule: exactly;">
+              <br style="visibility: hidden;">
+            </td>
+          </tr>
+          <tr>
+            <td style="border-collapse: collapse;">
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#595959">
+                <tr>
+                  <td align="center" style="border-collapse: collapse;">
+                    <table role="presentation" width="580" border="0" cellspacing="0" cellpadding="0" class="content-table">
+                      <tr>
+                        <td width="150" valign="top" class="header-block-l" style="border-collapse: collapse; padding-bottom: 10px; padding-left: 15px; padding-right: 0px; padding-top: 10px;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" style="color: black; text-decoration: underline;"><img src="logo.png" width="150" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="header-block-r" valign="middle" style="border-collapse: collapse; padding-bottom: 10px; padding-left: 0px; padding-right: 15px; padding-top: 10px;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td class="hbr" style="border-collapse: collapse; color: white; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px; font-weight: normal; line-height: 19px; mso-line-height-rule: exactly; text-align: right; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Video Digest: March
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f4f4">
+                <tr>
+                  <td class="top-video-padding" align="center" valign="top" style="border-collapse: collapse; padding-bottom: 40px; padding-left: 0px; padding-right: 0px; padding-top: 40px;">
+                    <table role="presentation" width="460" border="0" cellspacing="0" cellpadding="0" class="video-table">
+                      <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" valign="top" class="featured-text" style="border-collapse: collapse; color: #fba92b; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 12px; letter-spacing: 1px; font-weight: bold; line-height: 12px; mso-line-height-rule: exactly; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->FEATURED
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="featured-text-headline" style="border-collapse: collapse; color: #595959; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 20px; font-weight: bold; line-height: 20px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 10px; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="featured-text-content" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px; font-weight: 300; line-height: 22px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a super short text section too. This one can be just a little bit longer to describe the video
+                              </td>
+                            </tr>
+                          </table>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" valign="top" class="top-video-image" style="border-collapse: collapse; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; padding-top: 25px;">
+                                <a href="changeme" border="0" style="border: none; outline: none;">
+                                  <img src="video-image.jpg" width="460" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="border-collapse: collapse;">
+                                <table role="presentation" width="170" cellspacing="0" cellpadding="0" border="0">
+                                  <tr>
+                                    <td align="center" width="170" height="48" bgcolor="#FBA92B" class="button-wrapper" style="-moz-border-radius: 7px; -webkit-border-radius: 7px; background-clip: padding-box; border-collapse: collapse; border-radius: 7px; color: white; display: block;">
+                                      <a href="changeme" class="inner-button" style="color: black; display: inline-block; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 17px; line-height: 50px; text-decoration: none; width: 100%;"><span
+                                          style="color: white;">Call to action</span></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e8e8e8">
+                <tr>
+                  <td align="center" valign="top" class="two-col-padding" style="border-top: 1px solid #cbd0d6; border-collapse: collapse; padding-bottom: 35px; padding-left: 0px; padding-right: 0px; padding-top: 35px;">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" valign="top" class="two-col-header" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 18px; font-weight: bold; line-height: 21px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-decoration: none;">
+                          <!--CHANGEME AND DELETE THIS COMMENT-->Your Other Videos
+                        </td>
+                      </tr>
+                    </table>
+                    <table role="presentation" width="560" border="0" cellspacing="0" cellpadding="0" class="two-col-width">
+                      <tr>
+                        <td align="center" valign="top" class="two-col-split-l" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 10px; padding-top: 35px;">
+                          <table role="presentation" width="275" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" border="0" style="border: none; outline: none;"><img src="2-col-image.jpg" width="275" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-headline" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-description" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a little text section too, in case there’s more to say about it.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-cta" style="border-collapse: collapse; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left;">
+                                <a href="changeme" style="color: #1fa2ea; text-decoration: underline;">
+                                  <!--CHANGEME AND DELETE THIS COMMENT-->Call to Action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="two-col-split-r" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 35px;">
+                          <table role="presentation" width="275" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" border="0" style="border: none; outline: none;"><img src="2-col-image.jpg" width="275" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-headline" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-description" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a little text section too, in case there’s more to say about it.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-cta" style="border-collapse: collapse; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left;">
+                                <a href="changeme" style="color: #1fa2ea; text-decoration: underline;">
+                                  <!--CHANGEME AND DELETE THIS COMMENT-->Call to Action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f4f4">
+                <tr>
+                  <td align="center" valign="top" class="three-col-padding" style="border-bottom: 1px solid #cbd0d6; border-collapse: collapse; border-top: 1px solid #cbd0d6; padding-bottom: 30px; padding-left: 20px; padding-right: 20px; padding-top: 30px;">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" class="three-col-header" colspan="3" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 18px; font-weight: bold; line-height: 21px; mso-line-height-rule: exactly; padding-bottom: 30px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-decoration: none;">
+                          <!--CHANGEME AND DELETE THIS COMMENT-->Your Other Other Videos
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="video-split-l" align="center" valign="top" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 10px; padding-top: 0px;">
+                          <table role="presentation" width="180" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" border="0" style="border: none; outline: none;"><img src="3-col-image.jpg" width="180" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-headline" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-description" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a little text section too, in case there’s more to say about it.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-cta" style="border-collapse: collapse; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left;">
+                                <a href="changeme" style="color: #1fa2ea; text-decoration: underline;">
+                                  <!--CHANGEME AND DELETE THIS COMMENT-->Call to Action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="video-split-m" align="center" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 10px; padding-top: 0px;">
+                          <table role="presentation" width="180" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" border="0" style="border: none; outline: none;"><img src="3-col-image.jpg" width="180" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-headline" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-description" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a little text section too, in case there’s more to say about it.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-cta" style="border-collapse: collapse; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left;">
+                                <a href="changeme" style="color: #1fa2ea; text-decoration: underline;">
+                                  <!--CHANGEME AND DELETE THIS COMMENT-->Call to Action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="video-split-r" align="center" style="border-collapse: collapse;">
+                          <table role="presentation" width="180" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td style="border-collapse: collapse;">
+                                <!--CHANGEME AND DELETE THIS COMMENT--><a href="changeme" border="0" style="border: none; outline: none;"><img src="3-col-image.jpg" width="180" alt="" class="image-fix" style="-ms-interpolation-mode: bicubic; display: block; outline: none; text-decoration: none;"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-headline" style="border-collapse: collapse; color: #888889; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Setting Up Your Shot
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-description" style="border-collapse: collapse; color: #c1c4c6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left; text-decoration: none;">
+                                <!--CHANGEME AND DELETE THIS COMMENT-->Maybe a little text section too, in case there’s more to say about it.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-col-cta" style="border-collapse: collapse; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 14px; font-weight: normal; line-height: 16px; mso-line-height-rule: exactly; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 15px; text-align: left;">
+                                <a href="changeme" style="color: #1fa2ea; text-decoration: underline;">
+                                  <!--CHANGEME AND DELETE THIS COMMENT-->Call to Action</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="footer-padding" style="border-collapse: collapse; padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 30px;">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="footer-block-l" style="border-collapse: collapse;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="left" valign="top" class="company-name" style="border-collapse: collapse;">
+                                <span class="footer-text" style="color: #cbd0d6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 15px; font-weight: normal; line-height: 15px; mso-line-height-rule: exactly; text-decoration: none;"><b>
+                                    <!--CHANGE ME DELETE THIS COMMENT-->Company name</b></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top" class="address" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 10px;">
+                                <span class="address-text" style="color: #cbd0d6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 15px; font-weight: normal; line-height: 20px; mso-line-height-rule: exactly; text-decoration: none;">
+                                  <!--CHANGE ME DELETE THIS COMMENT-->Street Name<br>Town/City, MA 02215</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="footer-block-r" style="border-collapse: collapse;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="right" valign="top" class="edit" style="border-collapse: collapse;">
+                                <span class="footer-text" style="color: #cbd0d6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 15px; font-weight: normal; line-height: 15px; mso-line-height-rule: exactly; text-decoration: none;"><a href="changemehangeme"
+                                    style="color: #cbd0d6; text-decoration: underline;">Edit Preferences</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="right" valign="top" class="unsub" style="border-collapse: collapse; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 10px;">
+                                <span class="unsub-text" style="color: #cbd0d6; font-family: 'Arial', 'Helvetica', sans-serif; font-size: 15px; font-weight: normal; line-height: 15px; mso-line-height-rule: exactly; text-decoration: none;"><a href="changemehangeme"
+                                    style="color: #cbd0d6; text-decoration: underline;">Unsubscribe</a></span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height="10" class="page-break" bgcolor="#ffffff" style="border-collapse: collapse; line-height: 10px; mso-line-height-rule: exactly;">
+              <br style="visibility: hidden;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

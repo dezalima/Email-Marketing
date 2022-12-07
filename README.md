@@ -652,13 +652,13 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
                 <tr>
                     <td valign="top" style="padding-right: 5px;">
                         <img class="point"
-                            src="https://image.relacionamento.bv.com.br/lib/fe3b157175640475751579/m/731/63342454-8761-463f-80f9-2d86afa11d7d.png"
-                            alt="folha" width="24" height="25" style="min-width: 24px;min-height: 25px;">
+                            src="../"
+                            alt="descrição" width="24" height="25" style="min-width: 24px;min-height: 25px;">
                     </td>
                     <td style="padding-bottom: 24px;">
                         <font class="font-mobile-text"
                             style="font-family: 'Inter', sans-serif;font-size:16px;line-height:24px;letter-spacing:-0.2x;font-weight:400;color:#3D3D3D;">
-                            Desconto direto em folha de pagamento
+                            Lorem ipsum dolor sit amet
                         </font>
                     </td>
                 </tr>
@@ -669,10 +669,10 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
                             <tr>
                                 <td class="button" align="center" width="210" height="56"
                                     style="background-color:#4B6FDD;border-radius:8px;box-sizing: border-box;">
-                                    <a href="https://www.bv.com.br/consignado/consignado-privado/v2?idcmp=T03|C02|V49|F87|P203|AQ|150114149680-20220506|CLIENTES_CREDITO_CONSIGNADO|PAP_MAIO_2Q_PPR_052022|EMAIL_CTA_CLIQUE_PARA_SIMULAR_CLIENTES_CREDITO_CONSIGNADO_PAP_MAIO_2Q_PPR_D1_NOVOS_AUTOSSERVICO_REDIRECT_SITEBV"
+                                    <a href="#"
                                         target="_blank"
                                         style="font-weight:bold;font-family:'Inter', Helvetica, sans-serif;color:#FFFFFF;display:inline-block;text-decoration:none;line-height:60px;width:210px;font-size: 16px;">
-                                        Clique para simular!</a>
+                                        texto!</a>
                                 </td>
                             </tr>
                         </table>
@@ -778,8 +778,8 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
                                                                 style="max-width: 376px;" align="left">
                                                                 <tr>
                                                                     <td align="left" style="display:flex;padding-bottom: 16px;">
-                                                                        <img src="https://image.relacionamento.bv.com.br/lib/fe3b157175640475751579/m/29/f44b7017-5a53-49b2-abdc-9c7eb4fb77c9.png"
-                                                                            alt="haste azul" height="27" style="max-height: 27px;">
+                                                                        <img src="../"
+                                                                            alt="descrição" height="27" style="max-height: 27px;">
                                                                         <font class="font-mobile-titleTable"
                                                                             style="font-family: 'Inter', sans-serif; color:#4B6FDD;font-size:24px;line-height:32px;letter-spacing:-0.6px;font-weight:bold;text-align: left;margin-left: 4px;">
                                                                           Lorem Ipsum
@@ -835,8 +835,8 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
                                                     style="max-width: 368px;" align="left">
                                                     <tr>
                                                         <td align="left" style="display:flex;padding-bottom: 24px;">
-                                                            <img src="https://image.relacionamento.bv.com.br/lib/fe3b157175640475751579/m/29/f44b7017-5a53-49b2-abdc-9c7eb4fb77c9.png"
-                                                                alt="haste azul" height="27" style="max-height: 27px;">
+                                                            <img src="../"
+                                                                alt="descrição" height="27" style="max-height: 27px;">
                                                             <font class="font-mobile-titleTable"
                                                                 style="font-family: 'Inter', sans-serif; color:#2142AB;font-size:24px;line-height:32px;letter-spacing:-0.6px;font-weight:bold;text-align: left;margin-left: 4px;">
                                                                Lorem Ipsum
@@ -874,7 +874,6 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
     - Quando temos um bloco com duas `td`  e que não vai ser responsivo é preciso “englobar” ele em uma `table`, pois alguns clientes de e-mail (principalmente os instalados no computador) invertem esse blocos mesmo com o `style=”direction:ltr;”` .
         - Exemplo do caso acima:
             
-            ![Untitled](Email%20Marketing%20574ec000f024412ab0eaafeaeb76991f/Untitled%201.png)
             
             ```html
             <!-- info azul -->
@@ -892,15 +891,13 @@ A resposta para essa pergunta é simples: boa parte da sua lista não irá seque
                                                             <table cellspacing="0" cellpadding="0" border="0">
                                                                 <tr>
                                                                     <td valign="top">
-                                                                        <img src="https://image.relacionamento.bv.com.br/lib/fe3b157175640475751579/m/384/a9227dbd-945b-4ae7-859b-6c9ea19bb79c.png"
-                                                                            alt="celular" width="87" style="min-width: 87px;">
+                                                                        <img src="../"
+                                                                            alt="descrição" width="87" style="min-width: 87px;">
                                                                     </td>
                                                                     <td align="left" style="padding-left: 24px;">
                                                                         <font class="font-mobile-text"
                                                                             style="font-family: 'Inter', sans-serif; color:#4B6FDD;font-size:20px;line-height:26px;letter-spacing:-0.66px;font-weight:bold;text-align: left;">
-                                                                            Para facilitar a abertura da sua conta, <font
-                                                                                style="color:#3D3D3D;font-weight: normal;">
-                                                                                tenha seus documentos sempre em mãos!</font>
+                                                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus volutpat ex, sit amet placerat sapien congue id. Aenean pulvinar luctus pellentesque.
                                                                         </font>
                                                                     </td>
                                                                 </tr>
